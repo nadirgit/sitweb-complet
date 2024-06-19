@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CitWeb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://nticrabat.com/img/ofppt_lg.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#login">Espace stagiaire</a></li>
+                    
+                    <li><a href="#contact" id="contact-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-images">
+            <img src="https://www.ofppt.ma/sites/default/files/styles/thumbnail_home_slider/public/photos_home_slider/SLIDER%20PAGE%20D%27ACCUEIL%20-%20L%E2%80%99OFPPT%20et%20LafargeHolcim%20Maroc%20s%E2%80%99allient%20pour%20la%20mise%20en%20place%20de%20formations%20qualifiantes%20multisectorielles.png?itok=rIxdTq8K" alt="Slider 1">
+            <img src="https://www.ofppt.ma/sites/default/files/styles/thumbnail_home_slider/public/photos_actualites/SLIDER%20PAGE%20D%27ACCUEIL%20-%20SITE%20OFPPT%20GITEX%20AFRICA%202024.png?itok=zs3vgNhc" alt="Slider 2">
+        </div>
+            <!-- Add more images if needed -->
+        </div>
+        <div class="coursera-front-search-banner-input-container">
+            Consultez les emplois de temps
+            <select class="form-control" id="coursera-front-search-banner-input" name="groupe" onchange="submit();" style="font-family:'Open Sans', sans-serif">
+                <option></option>
+                <option value="214">INFO101</option>
+                <option value="219">INFO102</option>
+                <option value="216">INFO103</option>
+                <option value="202">DEV101</option>
+                <option value="203">DEV102</option>
+                <option value="204">DEV103</option>
+                <option value="205">DEV104</option>
+                <option value="206">DEV105</option>
+                <option value="207">DEV106</option>
+                <option value="208">DEV107</option>
+                <option value="209">DEV108</option>
+                <option value="210">DEV109</option>
+                <option value="211">DEV110</option>
+                <option value="241">DEVOWFS201</option>
+                <option value="244">DEVOWFS202</option>
+                <option value="245">DEVOWFS203</option>
+                <option value="246">DEVOWFS204</option>
+                <option value="251">DEVOWFS205</option>
+                <option value="247">DEVOWFS206</option>
+                <option value="258">DEVOWFS207</option>
+                <option value="257">DEVOWFS208</option>
+                <option value="256">DEVOWFS209</option>
+                <option value="265">DEVOWFS210</option>
+                <option value="221">ID101</option>
+                <option value="222">ID102</option>
+                <option value="223">ID103</option>
+                <option value="255">ID104</option>
+                <option value="259">ID105</option>
+                <option value="233">IDOCC201</option>
+                <option value="266">IDOCC202</option>
+                <option value="234">IDOCS201</option>
+                <option value="240">IDOCS202</option>
+                <option value="267">IDOCS203</option>
+                <option value="268">IDOCS204</option>
+                <option value="269">IDOCS205</option>
+                <option value="253">DES101</option>
+                <option value="254">DES102</option>
+                <option value="270">DESOUX201</option>
+                <option value="271">DESOUX202</option>
+                <option value="272">DESOUX203</option>
+                <option value="273">PIE101</option>
+                <option value="274">PIE102</option>
+                <option value="275">PIE103</option>
+                <option value="276">PIE104</option>
+            </select>
+        </div>
+    </header>
+    <main>
+       
+<script>document.addEventListener("DOMContentLoaded", function() {
+    // Vos autres scripts existants...
+
+    const espaceStagiaireLink = document.querySelector("nav ul li a[href='#login']");
+    const attestationSection = document.getElementById("attestation");
+
+    espaceStagiaireLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Pour éviter le comportement par défaut du lien
+        attestationSection.classList.remove("hidden");
+    });
+});
+</script>        
+        <section id="home">
+            <h1>Welcome to Ntic</h1>
+        </section>
+        <section id="last-news">
+            <h2>Last News</h2>
+            <p>Urgent: Retrait des convocations des stagiaires...</p>
+        </section>
+      
+        <section id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CitWeb. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<style>/* styles.css */
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+    
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+    }
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .logo {
+        height: 50px;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    .header-images {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .header-images img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .header-images img.active {
+        opacity: 1;
+    }
+    
+    .coursera-front-search-banner-input-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .coursera-front-search-banner-input-container select {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    
+    h1, h2 {
+        color: #333;
+    }
+    
+    #last-news, #calendar {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #contact.hidden {
+        display: none;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    form input, form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    form button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: #0056b3;
+    }
+    
+    footer {
+        background-color: #333;
+        color}
+    </style>
+    <script>// scripts.js
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let currentIndex = 0;
+            const images = document.querySelectorAll(".header-images img");
+            const totalImages = images.length;
+        
+            function changeImage() {
+                images[currentIndex].classList.remove("active");
+                currentIndex = (currentIndex + 1) % totalImages;
+                images[currentIndex].classList.add("active");
+            }
+        
+            images[currentIndex].classList.add("active");
+            setInterval(changeImage, 5000);
+        });
+        </script>
